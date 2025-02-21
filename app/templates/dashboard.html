@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-4">Recruiter Dashboard</h2>
+
+    <!-- Resume List -->
+    <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Analyzed Resumes</h3>
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border-b">Candidate Name</th>
+                    <th class="py-2 px-4 border-b">Skills Match</th>
+                    <th class="py-2 px-4 border-b">Experience Match</th>
+                    <th class="py-2 px-4 border-b">Sentiment Score</th>
+                    <th class="py-2 px-4 border-b">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Row -->
+                <tr>
+                    <td class="py-2 px-4 border-b">John Doe</td>
+                    <td class="py-2 px-4 border-b">80%</td>
+                    <td class="py-2 px-4 border-b">60%</td>
+                    <td class="py-2 px-4 border-b">0.75</td>
+                    <td class="py-2 px-4 border-b">
+                        <a href="#" class="text-blue-600 hover:underline">View Details</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Upload New Resume -->
+    <div class="mb-6">
+        <a href="{{ url_for('main.index') }}" class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">
+            Upload New Resume
+        </a>
+    </div>
+</div>
+{% endblock %}

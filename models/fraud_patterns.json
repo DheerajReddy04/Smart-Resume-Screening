@@ -1,0 +1,15 @@
+{
+    "fake_universities": [
+        "University of Nowhere",
+        "Fake Institute of Technology",
+        "Diploma Mill University",
+        "Online Degree Factory"
+    ],
+    "suspicious_phrases": [
+        "guaranteed placement",
+        "buy degree",
+        "instant graduation",
+        "no study required",
+        "fake certificate"
+    ]
+}

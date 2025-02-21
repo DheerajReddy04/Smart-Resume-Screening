@@ -1,0 +1,17 @@
+{
+    "positive_feedback": [
+        "Your resume demonstrates strong skills in {skills}.",
+        "The positive tone of your resume is impressive.",
+        "You have a great mix of technical and soft skills."
+    ],
+    "negative_feedback": [
+        "Consider improving your skills in {skills}.",
+        "The tone of your resume could be more positive.",
+        "Adding more details about your experience would help."
+    ],
+    "neutral_feedback": [
+        "Your resume is well-structured but could use more detail.",
+        "Consider highlighting your achievements more prominently.",
+        "Your skills are a good match, but some areas need improvement."
+    ]
+}

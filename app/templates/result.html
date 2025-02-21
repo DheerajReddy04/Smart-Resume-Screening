@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Analysis Results</h2>
+
+    <h3>Extracted Skills:</h3>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Fraud Detection Report:</h3>
+    {% if fraud_report.fake_universities or fraud_report.suspicious_phrases %}
+        <ul>
+            {% for uni in fraud_report.fake_universities %}
+                <li>Fake University Detected: {{ uni }}</li>
+            {% endfor %}
+            {% for phrase in fraud_report.suspicious_phrases %}
+                <li>Suspicious Phrase Detected: {{ phrase }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No fraudulent credentials detected.</p>
+    {% endif %}
+
+    <h3>Sentiment Analysis:</h3>
+    <p>Sentiment Score: {{ sentiment_score }}</p>
+    <p>
+        {% if sentiment_score > 0 %}
+            The overall sentiment is positive.
+        {% elif sentiment_score < 0 %}
+            The overall sentiment is negative.
+        {% else %}
+            The overall sentiment is neutral.
+        {% endif %}
+    </p>
+
+    <a href="{{ url_for('main.index') }}">Upload Another Resume</a>
+{% endblock %}

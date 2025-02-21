@@ -1,19 +1,21 @@
-# AI-Based Smart Resume Screening
+# Smart Resume Screening
 
-## Overview
-
-This application automates the process of screening resumes by extracting relevant skills, detecting potential fraud, and analyzing sentiment.
+An AI-based resume analysis tool for recruiters. This tool provides:
+- **NLP-based skill and experience matching**
+- **Automatic fraud detection for fake credentials**
+- **Sentiment analysis for cultural fit assessment**
+- **Personalized feedback for rejected candidates**
 
 ## Features
-
 - **Resume Parsing**: Supports PDF and DOCX formats.
-- **Skills Extraction**: Identifies relevant skills from the resume.
-- **Fraud Detection**: Flags suspicious credentials and phrases.
-- **Sentiment Analysis**: Analyzes the sentiment of the resume content.
+- **Skill Matching**: Extracts and matches skills from resumes.
+- **Fraud Detection**: Detects fake universities and suspicious phrases.
+- **Sentiment Analysis**: Analyzes the tone of the resume.
+- **Feedback Generation**: Provides constructive feedback for candidates.
 
-## Setup Instructions
+## Installation
 
-1. **Clone the Repository**:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/smart_resume_screening.git
    cd smart_resume_screening
